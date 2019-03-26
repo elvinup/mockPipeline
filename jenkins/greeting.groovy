@@ -2,12 +2,12 @@ pipeline {
   agent any
 
 libraries {
-  lib('lib-share-demo@master')
+  lib('patching-library@master')
 }
   stages {
       stage('Demo') {
 	steps {
-	  hello 'Shared Lib!'
+	  hello 'Elvin'
 	}
       }
   }
